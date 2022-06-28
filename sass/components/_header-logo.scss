@@ -1,0 +1,26 @@
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    margin: 15 24 0 25 ; 
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover{
+        color: var(--accent-color);
+    }
+
+}
+
+.part-logo {
+    color: var(--accent-logo-color);
+    margin-right: 93px;
+
+    &:hover, 
+    &:focus {
+    color: var(--accent-color);
+}
+}

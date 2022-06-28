@@ -1,0 +1,23 @@
+.footer__logo {
+        @include fontStyle (26px, 700, 0.03em, 1.2);
+        color: var(--accent-color);
+        @include tranSition ();
+
+        &:hover,
+        &:focus {
+            color: var(--accent-color);
+        }
+
+    }
+        
+    .footer__logo--part {
+        @include fontStyle (26px, 700, 0.03em, 1.2);
+        color: var(--main-white-color);
+        &:hover {
+        color:var(--accent-color) ;
+    }
+    }
+    
+    .footer__logo{
+    margin-bottom: 20px;
+}
