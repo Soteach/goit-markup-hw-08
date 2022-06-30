@@ -1,5 +1,5 @@
 .backdrop {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-color:var(--modal-window-background);
     position: fixed;
@@ -16,7 +16,8 @@
 }
 
 .modal {
-    width: 528px;
+    @include mintablet {
+    width: 450px;
     min-height: 581px;
     background-color: var(--main-white-color);
     border-radius: 5px;
@@ -29,10 +30,59 @@
     padding:40px;
 
     &__title {
-        @include fontStyle(20px, 700, 0.03em, 1.15);
+        width: 370px;
+        height: 60px;
+        text-align: center;
+        @include fontStyle(20px, 700, 0.03em, 1.5);
         color: var(--header-color);
-        margin-bottom: 12px;
+        margin-bottom: 10px;
     }
+}
+
+
+    @include tablet{
+        width: 450px;
+        min-height: 581px;
+        background-color: var(--main-white-color);
+        border-radius: 5px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1) rotate(0);
+        transition: transform 300ms;
+        padding:40px;
+
+        &__title {
+            width: 370px;
+            height: 60px;
+            text-align: center;
+            @include fontStyle(20px, 700, 0.03em, 1.5);
+            color: var(--header-color);
+            margin-bottom: 10px;
+        }
+    }
+
+    @include desktop{
+        width: 528px;
+        min-height: 581px;
+        background-color: var(--main-white-color);
+        border-radius: 5px;
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1) rotate(0);
+        transition: transform 300ms;
+        padding:40px;
+
+        &__title {
+            @include fontStyle(20px, 700, 0.03em, 1.15);
+            color: var(--header-color);
+            margin-bottom: 12px;
+        }
+    }
+
 
 }
 
@@ -201,8 +251,6 @@
     &:focus + .checkbox-label::before {
         border-color: var(--accent-color);
     }
-    
-
 }
 
 .modal-field {
@@ -220,7 +268,6 @@
 
 .checkbox-label {
     display: flex;
-    @include fontStyle (14px, null, 0.03em, 1.7);
     color: var(--main-font-color);
     align-items: center;
 
@@ -236,13 +283,30 @@
     label &::before {
         margin-left: 15px;
     }
+    @include mintablet {
+    @include fontStyle (12px, null, 0.03em, 1.67);}
+    @include tablet {
+        @include fontStyle (12px, null, 0.03em, 1.67);}
+    @include desktop {
+        @include fontStyle (14px, null, 0.03em, 1.7);
 
+}
+    
 }
 
 .privacy-link {
-    @include fontStyle (14px, null, 0.03em, 1.7);
     text-decoration-line: underline;
     color: var(--accent-color);
     margin: 0;
     padding-left: 3px;
+    @include mintablet {
+    @include fontStyle (12px, null, 0.03em, 1.67);
+    }
+    @include tablet {
+        @include fontStyle (12px, null, 0.03em, 1.67);
+        }
+    @include desktop {
+        @include fontStyle (14px, null, 0.03em, 1.7);
+
+}
 }

@@ -9,3 +9,34 @@
     transition-duration: $td;
     transition-timing-function:$ttf;
 }
+
+
+@mixin minimize {
+    @media screen and (max-width: 479px) {
+        @content
+    }
+}
+
+@mixin mobile {
+    @media screen and (min-width: 480px) {
+        @content
+    }
+}
+
+@mixin mintablet {
+    @media screen and (max-width: 767px) {
+        @content
+    }
+}
+
+@mixin tablet {
+    @media screen and (min-width: 768px) {
+        @content
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: 1200px) {
+        @content
+    }
+}

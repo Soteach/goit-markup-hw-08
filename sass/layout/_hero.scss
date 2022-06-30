@@ -9,33 +9,43 @@
 
 .hero-container {
     display:block;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 118px 60px;
+    @include tablet {
+        padding: 118px 204px;
+    }
+
+    @include desktop {
+        padding: 200px 237px;
+    }
 }
 
 .hero__header {
-    @include fontStyle (44px, 900, 0.06em, 1.36);
+    @include fontStyle (null, 900, 0.06em, 1.6);
     text-align: center;
     text-transform: uppercase;
     color: var(--main-white-color);
-    max-width: 696px;
     margin: 0 auto 30px;
+    @include mobile {
+        @include fontStyle (26px, 900, 0.06em, 1.6);
+    }
+    
+    @include desktop {
+        @include fontStyle (44px, null, null, 1.36);
+    }
+    
 }
 
 .hero__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     min-width: 200px;
     height: 50px;
-    justify-content: center;
-    font-family: 'Roboto', monotype;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30/16);
-    align-items: center;
-    letter-spacing: 0.06em;
+    @include fontStyle (16px, 700, 0.06em, 1.88);
     color: var(--main-white-color);
     background-color: var(--accent-color);
     border-radius: 4px;
-    margin: 0 500px;
+    margin: 0 auto;
     border: none;
     &:hover,
     &:focus {
