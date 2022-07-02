@@ -1,25 +1,34 @@
 .work{
     padding-bottom: 94px;
+    
+    &__head {
+        @include fontStyle (36px, 700, 0.03em, 1.17);
+        text-align: center;
+        color: var(--header-color);
+    }
 
-    @media screen and (max-width:1200px) {
+    &__item {
+        position: relative;
+    }
+
+    &__list {
+        display: flex;
+        .list:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+
+    @include mindesktop {
         display: none;
     }
 
-}
-
-.work__header {
-    @include fontStyle (36px, 700, 0.03em, 1.17);
-    text-align: center;
-    color: var(--header-color);
+    
 }
 
 .header__indent {
     margin-bottom: 50px;
 }
 
-.work__item {
-    position: relative;
-}
 
 .work-bottom-text{
     display: inline-block;
@@ -36,12 +45,6 @@
     background-color: rgba(47, 48, 58, 0.8);
 }
 
-.work__list {
-    display: flex;
-    .list:not(:last-child) {
-        margin-right: 30px;
-    }
-}
 
 .worker-soc-icon-team{
     fill: #AFB1B8;

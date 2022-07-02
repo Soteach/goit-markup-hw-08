@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homework-7</title>
+    <title>homework-8</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <body>
     <header class="header">
         <div class="container">
-<a class="logo header__logo" href="">Web<span class="part-logo">Studio</span></a>
+<a class="logo" href="">Web<span class="logo__part">Studio</span></a>
     <nav class="nav" >
     <ul class="nav-list">
         <li class="list nav__item-current">
@@ -149,7 +149,7 @@
     </section>
     <section class="work">
         <div class="container">
-        <h2 class="work__header header__indent">Чем мы занимаемся</h2>
+        <h2 class="work__head header__indent">Чем мы занимаемся</h2>
             <ul class="work__list" >
             <li class="list work__item">
                 <a href="">
@@ -397,13 +397,14 @@
         </div>
     </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container contact-wrap">
-        <div>
-        <a class="footer__logo " href="">Web<span class="footer__logo--part">Studio</span></a>
+            <div class="footer__block">
+        <div class="footer__lp">
+        <a class="footer__logo" href="">Web<span class="footer__logo--part">Studio</span></a>
         <address class="adress">г. Киев, пр-т Леси Украинки, 26</address>
-        <a class="link footer__link" href="mailtohtpps/info@devstudio.com">info@devstudio.com</a>
-        <a class="link footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
+        <a class="link footer__mail" href="mailtohtpps/info@devstudio.com">info@devstudio.com</a>
+        <a class="link footer__phone" href="tel:+380961111111">+38 096 111 11 11</a>
         </div>
         <div class="social-network-footer">
         <p class="join join__indent">присоединяйтесь</p>
@@ -442,9 +443,11 @@
                 </li>
                 </ul>
             </div>
+            </div>
             <div class="footer-form-container">
                 <form class="footer-form">
-                  <div class="footer-mail-input">
+                <div class="footer-mail-input">
+                    
                     <label for="footer-mail">Подпишитесь на рассылку</label>
                     <input 
                     class="sign-helper" 
@@ -453,16 +456,16 @@
                     id="footer-mail" 
                     placeholder="E-mail"
                     title="IvanSulyma@gmail.com">
-                  </div>
-                  <button type="submit" class="sign-button">Подписаться <svg class="footer-form-icon"
-                    width="24px" height="24px">
+                </div>
+                <button type="submit" class="sign-button">Подписаться 
+                    <svg class="footer-form-icon" width="24px" height="24px">
                     <use href="./images/symbol-defs.svg#icon-send"></use>
-                  </svg>
+                </svg>
                 </button>
                 </form>
-              </div>
+            </div>
 </div>
-</footer> -->
+</footer>
 <div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button class="modal-close-button" type="button" data-modal-close>

@@ -1,27 +1,43 @@
 .logo {
+
     font-family: 'Raleway', sans-serif;
     @include fontStyle (26px, 700, 0.03em, 1.19);
-    // font-weight: 700;
-    // font-size: 26px;
-    // line-height: calc(31/26);
-    // letter-spacing: 0.03em;
     color: var(--accent-color);
-    margin: 16px 15px ; 
-    margin-left: 0;
-    @include tranSition ();
+    margin: 16px 15px;
+    
+    @include tablet {
+        @include fontStyle (24px, 700, 0.03em, 1.16);
+        margin: 0;
+        padding: 0;
+        display: flex;
+        }
+    @include desktop {
+            @include fontStyle (26px, 700, 0.03em, 1.19);
+        }
 
-    &:hover{
+    &__part {
+        @include fontStyle (26px, 700, 0.03em, 1.19);
+        color: var(--accent-logo-color);
+        &:hover, 
+        &:focus {
         color: var(--accent-color);
     }
 
+    &:hover,
+    &:focus{
+        color: var(--accent-color);
+    }
+
+    @include tablet {
+        @include fontStyle (24px, 700, 0.03em, 1.16);
+        margin-right: 88px;
+        }
+
+        @include desktop {
+            @include fontStyle (26px, 700, 0.03em, 1.19);
+            margin-right: 93px;
+        }
+    
+}
 }
 
-.part-logo {
-    color: var(--accent-logo-color);
-    margin-right: 93px;
-
-    &:hover, 
-    &:focus {
-    color: var(--accent-color);
-}
-}

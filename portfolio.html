@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homework-7-2</title>
+    <title>homework-8-2</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Oleo+Script&family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -13,20 +13,20 @@
 <body>
     <header class="header">
         <div class="container">
-<a class="logo header__logo" href="">Web
-    <span class="part-logo">Studio</span>
+<a class="logo" href="">Web
+    <span class="logo__part">Studio</span>
 </a>
     <nav class="nav" >
         <ul class="nav-list">
-            <li class="list nav__item nav__margin">
+            <li class="list nav__item">
                 <a class="nav__link link" href="index.html">Студия
                 </a>
             </li>
-            <li class="list nav__item-current nav__margin">
+            <li class="list nav__item-current">
                 <a class="nav__link link" href="portfolio.html">Портфолио
                 </a>
             </li>
-            <li class="list nav__item nav__margin">
+            <li class="list nav__item">
                 <a class="nav__link link" href="">Контакты
                 </a>
             </li>
@@ -46,20 +46,67 @@
     </svg>+38 096 111 11 11
     </a>
 </div>
+<button class="menu-open-btn" type="button">
+    <svg width="40" height="40">
+        <use href="./images/symbol-defs.svg#icon-menu-mobile"></use>
+    </svg>
+</button>
+</div>
+<div class="mob-menu is-hidden">
+    <div class="mob-container">
+    <button class="menu-close-btn" type="button">
+        <svg width="40" height="40">
+            <use href="./images/symbol-defs.svg#icon-close-menu-mobile"></use>
+        </svg>
+    </button>
+    <nav class="mob-nav" >
+        <ul class="mob-menu-list">
+            <li class="list mob__item current">
+                <a class="mob__link link" href="index.html">Студия</a>
+            </li>
+            <li class="list mob__item">
+                <a class="mob__link link" href="portfolio.html">Портфолио</a>
+            </li>
+            <li class="list mob__item">
+                <a class="mob__link link" href="">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="mob-connect">
+        <a class="mob__phone" href="tel:+380961111111">+38 096 111 11 11
+        </a>
+        <a class="mob__mail"  href="mailtohtpps/info@devstudio.com">info@devstudio.com
+        </a>
+        <ul class="mob-menu-social">
+            <li class="list social-mob__item current">
+                <a class="social-mob__link link" href="index.html">Instagram</a>
+            </li>
+            <li class="list social-mob__item">
+                <a class="social-mob__link link" href="portfolio.html">Twitter</a>
+            </li>
+            <li class="list social-mob__item">
+                <a class="social-mob__link link" href="">Facebook</a>
+            </li>
+            <li class="list social-mob__item">
+                <a class="social-mob__link link" href="">LinkedIn</a>
+            </li>
+        </ul>
+</div>
+</div>
 </div>
     </header>
     <main>
         <section class="portfolio-section">
             <div class="container">
-            <ul class="btn-group">
-                <li class="list"><button type="button" class="main__button pointer">Все</button></li>
-                <li class="list"><button type="button" class="main__button pointer">Веб-сайты</button></li>
-                <li class="list"><button type="button" class="main__button pointer">Приложения</button></li>
-                <li class="list"><button type="button" class="main__button pointer">Дизайн</button></li>
-                <li class="list"><button type="button" class="main__button pointer">Маркетинг</button></li>
+            <ul class="portfolio-list">
+                <li class="portfolio__item"><button type="button" class="main__button pointer">Все</button></li>
+                <li class="portfolio__item"><button type="button" class="main__button pointer">Веб-сайты</button></li>
+                <li class="portfolio__item"><button type="button" class="main__button pointer">Приложения</button></li>
+                <li class="portfolio__item"><button type="button" class="main__button pointer">Дизайн</button></li>
+                <li class="portfolio__item"><button type="button" class="main__button pointer">Маркетинг</button></li>
             </ul>        
             <ul class="grid">
-                <li class="list grid__item grid__indent">
+                <li class="list grid__item">
                     <article class="product">
                     <a class="link product__link" href="">
                     <div class="product__thumb">
@@ -186,11 +233,12 @@
     </main>
     <footer class="footer">
         <div class="container contact-wrap">
-        <div>
+            <div class="footer__block">
+        <div class="footer__lp">
         <a class="footer__logo" href="">Web<span class="footer__logo--part">Studio</span></a>
         <address class="adress">г. Киев, пр-т Леси Украинки, 26</address>
-        <a class="link footer__link" href="mailtohtpps/info@devstudio.com">info@devstudio.com</a>
-        <a class="link footer__link" href="tel:+380961111111">+38 096 111 11 11</a>
+        <a class="link footer__mail" href="mailtohtpps/info@devstudio.com">info@devstudio.com</a>
+        <a class="link footer__phone" href="tel:+380961111111">+38 096 111 11 11</a>
         </div>
         <div class="social-network-footer">
         <p class="join join__indent">присоединяйтесь</p>
@@ -229,9 +277,11 @@
                 </li>
                 </ul>
             </div>
+            </div>
             <div class="footer-form-container">
                 <form class="footer-form">
-                  <div class="footer-mail-input">
+                <div class="footer-mail-input">
+                    
                     <label for="footer-mail">Подпишитесь на рассылку</label>
                     <input 
                     class="sign-helper" 
@@ -240,15 +290,16 @@
                     id="footer-mail" 
                     placeholder="E-mail"
                     title="IvanSulyma@gmail.com">
-                  </div>
-                  <button type="submit" class="sign-button">Подписаться <svg class="footer-form-icon"
-                    width="24px" height="24px">
+                </div>
+                <button type="submit" class="sign-button">Подписаться 
+                    <svg class="footer-form-icon" width="24px" height="24px">
                     <use href="./images/symbol-defs.svg#icon-send"></use>
-                  </svg>
+                </svg>
                 </button>
                 </form>
-              </div>
             </div>
+</div>
 </footer>
+<script src="./js/menu.js"></script>
 </body>
 </html>
