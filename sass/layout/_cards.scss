@@ -8,8 +8,22 @@
             margin-right: auto;
         }
     }
+    
+@include mindesktop{
+    &__item:first-child .cards-footer {
+        min-height: 144px;
+    }
+}
+    
+
+@include desktop {
+    &__item:first-child .cards-footer {
+        max-height: 110px;
+    }
 
 }
+}
+
 
 .grid__item {
     width: 100%;
@@ -34,8 +48,10 @@
 @include desktop {
     width: calc((100% - 60px)/3);
 }
-
 }
+
+
+
 
 .product__title {
     @include fontStyle (18px, 700, 0.06em, 2);

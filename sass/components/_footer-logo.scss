@@ -1,7 +1,13 @@
 .footer__logo {
-        @include fontStyle (26px, 700, 0.03em, 1.2);
         color: var(--accent-color);
         @include tranSition ();
+        @include mindesktop {
+            @include fontStyle (24px, 700, 0.03em, 1.17);
+        }
+
+        @include desktop {
+            @include fontStyle (26px, 700, 0.03em, 1.19);
+        }
 
         &:hover,
         &:focus {
@@ -27,11 +33,19 @@
     }
         
     .footer__logo--part {
-        @include fontStyle (26px, 700, 0.03em, 1.2);
         color: var(--main-white-color);
         &:hover {
         color:var(--accent-color) ;
     }
+
+    @include mindesktop {
+        @include fontStyle (24px, 700, 0.03em, 1.17);
+    }
+
+    @include desktop {
+        @include fontStyle (26px, 700, 0.03em, 1.19);
+    }
+
     }
     
     .footer__logo{
