@@ -1372,7 +1372,7 @@ address :hover, address :focus {
 }
 
 @media screen and (min-width: 768px) {
-  .footer__block {
+  .footer-block {
     display: flex;
     justify-content: space-between;
     padding-bottom: 60px;
@@ -1380,7 +1380,7 @@ address :hover, address :focus {
   }
 }
 @media screen and (min-width: 768px) and (min-width: 1200px) {
-  .footer__block {
+  .footer-block {
     padding-bottom: 0;
   }
 }

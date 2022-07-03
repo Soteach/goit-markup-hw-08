@@ -153,19 +153,61 @@
             <ul class="work__list" >
             <li class="list work__item">
                 <a href="">
-                <img src="images/box1.jpg" alt="людина пише програму" width="370" height="294">
+
+                    <picture>
+                        <source 
+                        srcset="
+                        images/work/work-1x.jpg 1x,
+                        images/work/work-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        />
+    
+                        <img  
+                        src="images/work/work-2x.jpg" 
+                        alt="людина пише програму" 
+                        width="370"
+                        height="294"/>
+                    </picture>
                 <p class="work-bottom-text">Десктопные приложения</p>
                 </a>
             </li>
             <li class="list work__item">
                 <a href="">
-                <img src="images/box2.jpg" alt="перевірка роботи програми на мобільному пристрої" width="370" height="294">
+
+                    <picture>
+                        <source 
+                        srcset="
+                        images/work/work-two-1x.jpg 1x,
+                        images/work/work-two-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        />
+    
+                        <img  
+                        src="images/work/work-two-2x.jpg" 
+                        alt="перевірка роботи програми на мобільному пристрої" 
+                        width="370"
+                        height="294"/>
+                    </picture>
                 <p class="work-bottom-text">Мобильные приложения</p>
             </a>
             </li>
             <li class="list work__item">
                 <a href="">
-                <img src="images/box3.jpg" alt="вибір кольору на планшеті" width="370" height="294">
+
+                    <picture>
+                        <source 
+                        srcset="
+                        images/work/work-tree-1x.jpg 1x,
+                        images/work/work-tree-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        />
+    
+                        <img  
+                        src="images/work/work-tree-2x.jpg" 
+                        alt="вибір кольору на планшеті" 
+                        width="370"
+                        height="294"/>
+                    </picture>
                 <p class="work-bottom-text">Дизайнерские решения</p>
             </a>
             </li>
@@ -177,30 +219,35 @@
         <h2 class="team__header header__indent">Наша команда</h2>
         <ul class="team__list">
             <li class="team__item"> 
+                <a href="">
                     <picture>
-                        <source src="images/team/igor-desk-1x.jpg 1x,
+                        <source 
+                        srcset="
+                        images/team/igor-desk-1x.jpg 1x,
                         images/team/igor-desk-2x.jpg 2x"
-                        media="(min-width 1200px)"
+                        media="(min-width: 1200px)"
                         />
     
                         <source srcset="
-                        ./images/team/igor-tab-1x.jpg 1x, 
-                        ./images/team/igor-tab-2x.jpg 2x"
-                        media="(min-width 768px)"
+                        /images/team/igor-tab-1x.jpg 1x, 
+                        /images/team/igor-tab-2x.jpg 2x"
+                        media="(min-width: 768px)"
                         />
     
                         <source srcset="
-                        ./images/team/igor-mob-1x.jpg 1x, 
-                        ./images/team/igor-mob-2x.jpg 2x"
-                        media="(min-width 320px)"
+                        /images/team/igor-mob-1x.jpg 1x, 
+                        /images/team/igor-mob-2x.jpg 2x"
+                        media="(min-width: 320px)"
                         />
     
                         <img 
                         class="team__image" 
-                        src="images/teamcard1.jpg" 
+                        src="images/team/igor-mob-2x.jpg" 
                         alt="Product_Designer" 
-                        width="450" height="460">
+                        width="450"
+                        height="460"/>
                     </picture>
+                </a>
                 <div class="card-header">
                 <h3 class="work__header">Игорь Демьяненко</h3>
                 <p class="team-workers">Product Designer</p>
@@ -241,7 +288,34 @@
             </div> 
             </li>
             <li class="team__item">
-                <a href=""> <img class="team__image" src="images/teamcard2.jpg" alt="Frontend_developer" width="270" height="260">
+                <a href=""> 
+                    <picture>
+                        <source 
+                        srcset="
+                        images/team/olga-desk-1x.jpg 1x,
+                        images/team/olga-desk-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        />
+    
+                        <source srcset="
+                        /images/team/olga-tab-1x.jpg 1x, 
+                        /images/team/olga-tab-2x.jpg 2x"
+                        media="(min-width: 768px)"
+                        />
+    
+                        <source srcset="
+                        /images/team/olga-mob-1x.jpg 1x, 
+                        /images/team/olga-mob-2x.jpg 2x"
+                        media="(min-width: 320px)"
+                        />
+    
+                        <img 
+                        class="team__image" 
+                        src="/images/team/olga-mob-2x.jpg" 
+                        alt="Frontend_developer" 
+                        width="450"
+                        height="460"/>
+                    </picture>
                 </a> 
             <div class="card-header">
                 <h3 class="work__header">Ольга Репина</h3>
@@ -283,7 +357,34 @@
             </div>
             </li>
             <li class="team__item">
-                <a href=""> <img class="team__image" src="images/teamcard3.jpg" alt="Marketing" width="270" height="260">
+                <a href=""> 
+                    <picture>
+                        <source 
+                        srcset="
+                        images/team/nikolaj-desk-1x.jpg 1x,
+                        images/team/nikolaj-desk-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        />
+    
+                        <source srcset="
+                        ./images/team/nikolaj-tab-1x.jpg 1x, 
+                        ./images/team/nikolaj-tab-2x.jpg 2x"
+                        media="(min-width: 768px)"
+                        />
+    
+                        <source srcset="
+                        ./images/team/nikolaj-mob-1x.jpg 1x, 
+                        ./images/team/nikolaj-mob-2x.jpg 2x"
+                        media="(min-width: 320px)"
+                        />
+    
+                        <img 
+                        class="team__image" 
+                        src="/images/team/nikolaj-mob-2x.jpg" 
+                        alt="Marketing" 
+                        width="450"
+                        height="460"/>
+                    </picture>
                 </a> 
             <div class="card-header">
                 <h3 class="work__header">Николай Тарасов</h3>
@@ -325,7 +426,36 @@
             </div>
             </li>
             <li class="team__item">
-                <a href=""> <img class="team__image no-gap" src="images/teamcard4.jpg" alt="UI_Designer" width="270" height="260">
+                <a href=""> 
+                    
+                    <picture>
+                        <source 
+                        srcset="
+                        images/team/mihail-desk-1x.jpg 1x,
+                        images/team/mihail-desk-2x.jpg 2x"
+                        media="(min-width: 1200px)"
+                        />
+    
+                        <source srcset="
+                        ./images/team/mihail-tab-1x.jpg 1x, 
+                        ./images/team/mihail-tab-2x.jpg 2x"
+                        media="(min-width: 768px)"
+                        />
+    
+                        <source srcset="
+                        ./images/team/mihail-mob-1x.jpg 1x, 
+                        ./images/team/mihail-mob-2x.jpg 2x"
+                        media="(min-width: 320px)"
+                        />
+    
+                        <img 
+                        class="team__image" 
+                        src="./images/team/mihail-mob-2x.jpg" 
+                        alt="Frontend_developer" 
+                        width="450"
+                        height="460"/>
+                    </picture>
+
                 </a> 
                 <div class="card-header">
                 <h3 class="work__header">Михаил Ермаков</h3>
@@ -421,7 +551,7 @@
     </main>
     <footer class="footer">
         <div class="container contact-wrap">
-            <div class="footer__block">
+            <div class="footer-block">
         <div class="footer__lp">
         <a class="footer__logo" href="">Web<span class="footer__logo--part">Studio</span></a>
         <address class="adress">г. Киев, пр-т Леси Украинки, 26</address>
@@ -470,7 +600,7 @@
                 <form class="footer-form">
                 <div class="footer-mail-input">
                     
-                    <label for="footer__sign">Подпишитесь на рассылку</label>
+                    <label for="footer-mail">Подпишитесь на рассылку</label>
                     <input 
                     class="sign-helper" 
                     type="text" 
