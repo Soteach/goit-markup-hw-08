@@ -5,35 +5,20 @@
 
     @include minimize {
         padding: 60px 15px;
-        }
-    
-        @include tablet {
+    }
+
+    @include tablet {
         padding: 60px 75px;        
     }
         
-        @include desktop {
+    @include desktop {
             display: block;
             padding: 60px 0;
         }
 
     a{
-        display: block;
-    }
-
-    @include minimize {
-    display: block;
-    }
-
-    @include mintablet {
-        display: block;
-    }
-
-    @include tablet {
-    display: block;
-    }
-    
-    @include desktop {
-        display: block;
+        display: flex;
+        justify-content: center;
     }
     
     &__mail {
@@ -52,11 +37,6 @@
         margin-bottom: 8px;
     }
 
-    @include mindesktop {
-        text-align: center;
-        margin-bottom: 8px;
-    }
-
 }
 
     &__phone {
@@ -64,6 +44,8 @@
     @include fontStyle (14px, null, 0.03em, 1.7);
     color: rgba(255, 255, 255, 0.6);
     @include tranSition ();
+    text-align: center;
+    margin-bottom: 8px;
 
     &:hover,
     &:focus {
@@ -74,18 +56,9 @@
         text-align: center;
         margin-bottom: 60px;
     }
-    @include mintablet {
-        text-align: center;
-        margin-bottom: 8px;
-    }
-
-    @include mindesktop {
-        text-align: center;
-        margin-bottom: 8px;
-    }
-    }
+    
 }
-
+}
 
 .contact-wrap.container {
     display: flex;
@@ -140,40 +113,12 @@ address {
     @include fontStyle (14px, 700, 0.03em, 1.14);
     text-transform: uppercase;
     color: var(--main-white-color);
-}
 
-.join__indent {
-    margin-top: 10;
-    margin-bottom: 0;
 
-    @include mintablet {
-        text-align: center;
+
+    &__indent {
         margin-bottom: 20px;
-    }
-
-    @include minimize {
         text-align: center;
-        margin-bottom: 20px;
-    }
-
-    @include mobile {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    @include mintablet {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    @include tablet {
-        text-align: center;
-        margin-bottom: 20px;
-    }
-
-    @include desktop {
-        text-align: center;
-        margin-bottom: 20px;
     }
 
 }
@@ -181,31 +126,9 @@ address {
 .social-network-list{
     display: flex;
     gap: 10px;
-    @include mintablet {
-        justify-content: center;
-        margin-bottom: 60px;
-    }
-
-    @include minimize {
-        text-align: center;
-        margin-bottom: 60px;
-    }
-
-    @include mobile {
-        justify-content: center;
-        margin-bottom: 60px;
-    }
-
-    @include mintablet {
-        justify-content: center;
-        margin-bottom: 60px;
-    }
-
-    @include tablet {
-        justify-content: center;
-        margin-bottom: 60px;
-    }
-
+    justify-content: center;
+    margin-bottom: 60px;
+    
     @include desktop {
         justify-content: center;
         margin-bottom: 0;
@@ -250,20 +173,6 @@ background-color: rgba(255, 255, 255, 0.1);
 
 
 .footer__block {
-    @include minimize {
-        display: block;
-        max-width: 100%;
-    }
-
-    @include mobile {
-        display: block;
-        max-width: 100%
-    }
-
-    @include mintablet {
-        display: block;
-        max-width: 100%
-    }
 
     @include tablet {
     display: flex;
@@ -284,16 +193,12 @@ background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* ----------------------------------FOOTER FORM--------------------- */
-
 .footer-form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
-
-    @include minimize {
-        justify-content: center;
-    }
+    justify-content: center;
 
     @include desktop {
         flex-direction: row;
@@ -302,47 +207,32 @@ background-color: rgba(255, 255, 255, 0.1);
     }
     
 }
+
 .footer-mail-input {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 
     &.helper::placeholder {
         color: rgba(255, 255, 255, 0.6);
     }
 
-    @include minimize {
-        align-items: center;
-    }
-
-    @include mobile {
-        align-items: center;
-    }
-
     @include tablet {
-        align-items: center;
         margin-bottom: 20px;
     }
 
     @include desktop {
         width: 380px;
         margin-bottom: 0;
+        align-items: flex-start;
     }
 
     & label {
         @include fontStyle (14px, 700, 0.03em, 1.14);
         text-transform: uppercase;
         color: var(--main-white-color);
+        margin-bottom: 20px;
     
-        @include mintablet {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        @include tablet {
-            margin-bottom: 20px;
-        }
-
     }
 
 }
@@ -359,7 +249,7 @@ background-color: rgba(255, 255, 255, 0.1);
     background-color: transparent;
     color: var(--main-white-color);
     cursor: pointer;
-
+    
     @include minimize {
         width: 130%;
         align-items: center;
@@ -374,22 +264,13 @@ background-color: rgba(255, 255, 255, 0.1);
         margin-bottom: 20px;
     }
 
-    @include tablet {
-        max-width: 450px;
-    }
-
     @include desktop {
         max-width: 360px;
     }
-
-
 }
 
 .sign-button {
-    padding-top: 10px;
-    padding-right: 28px;
-    padding-bottom: 10px;
-    padding-left: 29px;
+    padding: 10px 28px;
     display: flex;
     align-items: center;
     @include fontStyle (16px, 700, 0.06em, 1.9);
@@ -400,4 +281,8 @@ background-color: rgba(255, 255, 255, 0.1);
     border-radius: 4px;
     cursor: pointer;
 
+}
+
+.footer-form-icon {
+    margin-left: 10px;
 }
