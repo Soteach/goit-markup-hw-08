@@ -4,9 +4,19 @@
         border:none;
     }
 
+    
 .portfolio__item:not(:last-child){
+
+    @include mindesktop {
         margin-right: 8px;
         margin-bottom: 15px;
+    }
+
+    @include desktop {
+        margin-right: 8px;
+    }
+
+        
     }
     
 .portfolio__item{
@@ -16,6 +26,10 @@
 
     @include tablet {
         margin-bottom: 30px;
+    }
+
+    @include desktop {
+        margin-bottom: 50px;
     }
 
 }

@@ -23,6 +23,10 @@
     color: var(--header-color);
     margin-bottom: 10px;
     text-align: center;
+
+    @include tablet {
+        text-align: left;
+    }
 }
 
 .main-font {

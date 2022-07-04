@@ -51,12 +51,19 @@
     
 }
 
+.mob-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
 .mob__item:not(:last-child){
     margin-bottom: 32px;
 }
 
 .mob-menu-list {
-    margin-bottom: 302px;
+    margin-bottom: 20px;
 }
 
 .mob__link {
